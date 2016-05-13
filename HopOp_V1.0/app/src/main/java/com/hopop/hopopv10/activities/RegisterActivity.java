@@ -48,8 +48,8 @@ public class RegisterActivity extends AppCompatActivity {
         eye = (ImageButton) findViewById(R.id.Button_eye);
         linkedIn = (Button) findViewById(R.id.button_Lin);
         facebook = (Button) findViewById(R.id.button_Lin);
-
-
+        
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
     /*@OnClick(R.id.button_signup)
     public void signUpUser(View view){*/
