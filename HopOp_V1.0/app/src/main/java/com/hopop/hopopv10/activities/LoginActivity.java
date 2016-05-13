@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.Button;
@@ -42,6 +43,8 @@ public class LoginActivity extends AppCompatActivity {
         pass=(EditText)findViewById(R.id.editText_Psw);
         Login = (Button) findViewById(R.id.button_Login);
         SignUp = (Button) findViewById(R.id.button_signup);
+        
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
